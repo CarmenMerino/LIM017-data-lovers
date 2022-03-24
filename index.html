@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="main.js" type="module"></script>
+    <header>
+      <img id="logoPokemon" class="logo-pokemon" src="recursos\logo-pokemon.png" />
+    </header>
+    <div id="buscador" class="buscador">
+      <input id="search" type="search" placeholder="Buscar"/>
+    </div>
+    <div id="pokemones" class="visible"></div>
+
+    <div class="botones">
+      <select class ="select123" name="SELECTION1" id="selection1">
+        <option value disabled selected>Regiones</option>
+        <option value="johto">Johto</option>
+        <option value="kanto">Kanto</option>
+      </select>
+
+      <select class ="select123" name="SELECTION" id="selection">
+        <option value disabled selected>Tipo de Pokemon</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="normal">Normal</option>
+        <option value="grass">Grass</option>
+        <option value="electric">Electric</option>
+      </select>
+
+      <select class ="select123" name="ORDER" id="selection2">
+        <option value disable selected>Orden Alfabético</option>
+        <option value="az">Order Upward</option>
+        <option value="za">Order Descendig</option>
+      </select>
+      <input class ="select123" type="button" id="porcentaje" value="Porcentaje">
+
+      <div id="chart_div"></div>
+
+    </div>
+  </body>
+</html>
